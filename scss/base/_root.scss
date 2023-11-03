@@ -1,0 +1,33 @@
+// ========================== //
+//            ROOT            //
+// ========================== //
+@use "variables" as *;
+
+/*--START VARIABLE--------------------*/
+:root {
+  /*--COLOR--------------------*/
+  @each $color, $value in $theme-color {
+    --#{$prefix}clr-#{$color}: #{$value};
+  }
+  /*--FONT FAMILY--------------------*/
+  @each $name, $value in $font-family {
+    --#{$prefix}font-#{$name}: #{$value};
+  }
+  /*--FONT SIZE--------------------*/
+  @each $name, $value in $font-sizes {
+    --#{$prefix}font-#{$name}: #{$value};
+  }
+  /*--FONT WEIGHT--------------------*/
+  @each $name, $value in $font-weights {
+    --#{$prefix}font-#{$name}: #{$value};
+  }
+  /*--LINE HEIGHT--------------------*/
+  @each $name, $value in $line-height {
+    --#{$prefix}line-#{$name}: #{$value};
+  }
+  /*--BOX SHADOW-------------------*/
+  @each $name, $value in $shadows {
+    --#{$prefix}box-#{$name}: #{$value};
+  }
+}
+/*--END VARIABLE--------------------*/

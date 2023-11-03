@@ -1,0 +1,85 @@
+// ========================== //
+//           CARD             //
+// ========================== //
+
+@use "../base" as *;
+@use "sass:map";
+
+/*--START CARD--------------------*/
+.card {
+  display: flex;
+  max-width: 37.5rem;
+  border-radius: 10px;
+  box-shadow: map-get($map: $shadows, $key: "shadow-sharp");
+  @include themeColor(background-color, "theme-bg-alt");
+
+  &:hover {
+    box-shadow: map-get($map: $shadows, $key: "shadow-diffuse");
+  }
+  &__image {
+    height: 450px;
+    border-radius: 10px 0 0 10px;
+    &--mobile {
+      display: none;
+    }
+  }
+  &__info {
+    padding: 2rem;
+  }
+
+  &__product {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  &__title {
+    margin: 1rem 0;
+  }
+  &__description {
+    margin: 1rem 0;
+  }
+  &__price {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: $ff-brand;
+    &--old {
+      @include font-style(14px);
+      text-decoration: line-through;
+      @include themeColor(color, "theme-text");
+    }
+    &--new {
+      @include font-style(32px);
+      @include themeColor(color, "theme-primary-100");
+    }
+  }
+
+  @include mq(tablet) {
+    flex-direction: column;
+    width: 345px;
+    margin: 1rem;
+    &__image {
+      height: 100%;
+      border-radius: 10px 10px 0 0;
+      &--desktop {
+        display: none;
+      }
+      &--mobile {
+        display: block;
+      }
+    }
+    &__info {
+      padding: 1.5rem;
+    }
+    &__product {
+      text-transform: uppercase;
+      @include font-style(12px, null, null, 4px);
+    }
+    &__title {
+      margin: 0.5rem 0;
+    }
+    &__description {
+      margin: 1rem 0;
+    }
+  }
+}
+/*--END CARD--------------------*/

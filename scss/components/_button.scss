@@ -1,0 +1,25 @@
+// ========================== //
+//           BUTTON             //
+// ========================== //
+
+@use "../base" as *;
+@use "sass:map";
+
+/*--START BUTTON--------------------*/
+.btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  @include themeColor(background, "theme-primary-100");
+  &:hover{
+    @include themeColor(background, "theme-primary-200");
+  }
+}
+/*--END BUTTON--------------------*/

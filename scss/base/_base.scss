@@ -1,0 +1,48 @@
+// ========================== //
+//           RESET            //
+// ========================== //
+@use "variables" as *;
+@use "mixins" as *;
+@use "sass:map";
+
+/*--START RESET--------------------*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 solid transparent;
+}
+body {
+  font-family: $ff-sans;
+  @include font-style($fsize-base, $fw-500, $line-h-base);
+  @include themeColor(background, "theme-bg");
+}
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*--END RESET--------------------*/
+/*--START TYPOGRAPHY--------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ff-brand;
+  @include font-style(null, $fw-700, $line-h-lg);
+  @include themeColor(color, "theme-secondary");
+}
+p {
+  @include font-style($fsize-sm, null, $line-h-sm);
+  @include themeColor(color, "theme-text");
+}
+
+/*--END TYPOGRAPHY--------------------*/

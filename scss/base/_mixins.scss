@@ -1,0 +1,35 @@
+/// ========================== ///
+///           MIXINS           ///
+/// ========================== ///
+@use "breakpoints" as *;
+@use "variables" as *;
+@use "sass:map";
+
+///--FONT----////
+@mixin font-style($size: false, $weight: false, $lh: false, $ls: false) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+///--BREAKPOINTS----////
+@mixin mq($key) {
+  $size: map.get($breakpoints, $key);
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+///--COLOR----////
+@mixin themeColor($prop, $color) {
+  #{$prop}: map.get($theme-color, $color);
+}

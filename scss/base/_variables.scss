@@ -1,0 +1,88 @@
+///------------------------///
+///       VARIÁVEIS        ///
+///------------------------///
+
+$prefix: lb-;
+
+///--GOOGLE FONTS-----////
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+///--FONTS FAMILY-----////
+$ff-sans: "Montserrat", sans-serif;
+$ff-brand: "Fraunces", sans-serif;
+
+$font-family:(
+"brand": $ff-brand,
+"base":  $ff-sans
+);
+
+///--FONTS SIZE-------////
+$fsize-base: 1rem;
+$fsize-sm: $fsize-base * .875;
+$fsize-brand: $fsize-base * 2.625;
+
+$font-sizes:(
+  "base" :    $fsize-base,
+  "small" :   $fsize-sm,
+  "brand" :   $fsize-brand
+);
+
+///--FONTS WEIGTH-----////
+$fw-500: 500;
+$fw-700: 700;
+
+$font-weights: (
+  "medium" : $fw-500,
+  "bold" :   $fw-700
+);
+
+///--LINE HEIGHT-----////
+$line-h-base: 1.5;
+$line-h-sm:   1.571;
+$line-h-lg:   1.190;
+
+$line-height: (
+  "lh-base" : $line-h-base,
+  "lh-sm" :   $line-h-sm,
+  "lh-lg" :   $line-h-lg
+);
+
+
+///--COLOR SYSTEM----////
+$white:             hsl(0, 0%, 100%);
+$dark-grayish-blue: hsl(228, 12%, 48%);
+$dark-blue:         hsl(212, 21%, 14%);
+$cream:             hsl(30, 38%, 92%);
+$dark-cyan-shade:   hsl(158, 43%, 17%);
+$dark-cyan:         hsl(158, 36%, 37%);
+
+$theme-color: (
+  "theme-primary-100":   $dark-cyan,
+  "theme-primary-200":   $dark-cyan-shade,
+  "theme-secondary":     $dark-blue,
+  "theme-text":          $dark-grayish-blue,
+  "theme-bg":            $cream,
+  "theme-bg-alt":        $white
+);
+
+///--BOX SHADOW----////
+$box-shadow-1:
+0 1px 1px rgba(0,0,0,0.15),
+0 2px 2px rgba(0,0,0,0.15),
+0 4px 4px rgba(0,0,0,0.15),
+0 8px 8px rgba(0,0,0,0.15);
+
+$box-shadow-2:
+0 1px 1px rgba(0,0,0,0.12),
+0 2px 2px rgba(0,0,0,0.12),
+0 4px 4px rgba(0,0,0,0.12),
+0 8px 8px rgba(0,0,0,0.12),
+0 16px 16px rgba(0,0,0,0.12);
+
+$shadows:(
+  "shadow-sharp":   $box-shadow-1,
+  "shadow-diffuse": $box-shadow-2
+);

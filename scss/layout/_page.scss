@@ -1,0 +1,29 @@
+// ========================== //
+//           PAGE             //
+// ========================== //
+
+@use "../base" as *;
+/*--START LAYOUT--------------------*/
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  .main {
+    &__attribution {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 1rem;
+      font-size: 14px;
+      text-align: center;
+      & a {
+        color: $dark-cyan;
+      }
+      @include mq(mobile) {
+        font-size: 12px;
+      }
+    }
+  }
+}
+/*--END LAYOUT--------------------*/

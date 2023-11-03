@@ -11,7 +11,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -28,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Product Preview Card Component | Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-component-frontend-mentor-pgvop9FJpI)
+- Live Site URL: [](https://product-preview-card-component-nu-coral.vercel.app)
 
 ## My process
 

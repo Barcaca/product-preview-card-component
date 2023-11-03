@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Product Preview Card Component | Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-component-frontend-mentor-pgvop9FJpI)
-- Live Site URL: [](https://product-preview-card-component-nu-coral.vercel.app)
+- Live Site URL: [Vercel APP](https://product-preview-card-component-nu-coral.vercel.app)
 
 ## My process
 
